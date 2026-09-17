@@ -1,0 +1,10 @@
+.site-loader { --loader-color: #bccade; position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; min-height: 100dvh; }
+.site-loader-grid { position: absolute; inset: 0; display: flex; flex-direction: column; }
+.site-loader-row { display: flex; flex: 1 0 25%; overflow: hidden; }
+.site-loader-tile { flex: 1 0 0; height: 100%; background: var(--loader-color); outline: 1px solid var(--loader-color); will-change: transform; }
+.site-loader-mask { position: relative; overflow: hidden; padding: 8px; }
+.site-loader-logo { display: flex; flex-direction: column; align-items: center; gap: 13px; padding: 8px; transform: translateY(-105%); will-change: transform; }
+.site-loader-brand { display: flex; align-items: center; justify-content: center; gap: 14px; color: #171a1d; font-size: clamp(28px, 3vw, 40px); font-weight: 500; line-height: 1.2; letter-spacing: -.04em; white-space: nowrap; }
+.site-loader-brand img { display: block; width: clamp(32px, 3vw, 42px); height: auto; filter: brightness(0); }
+.site-loader-credit { color: #39465a; font-size: 13px; font-weight: 500; letter-spacing: .04em; }
+.site-content[data-ready='false'] .hero-actions { animation-play-state: paused; }
