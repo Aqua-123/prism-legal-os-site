@@ -187,7 +187,7 @@ function Lifecycle() {
 function DeploymentOptions() {
   return (
     <section className="deployment" aria-labelledby="deployment-title">
-      <HeadingReveal id="deployment-title">Open source. Run your way.</HeadingReveal>
+      <HeadingReveal id="deployment-title">Your Infrastructure. Your Rules.</HeadingReveal>
       <LineReveal className="deployment-intro">Deploy Prism on your own infrastructure, or let our team handle setup and ongoing operations.</LineReveal>
       <div className="deployment-grid">
         <ScrollScene className="deployment-slot" start={.08} end={.45}>

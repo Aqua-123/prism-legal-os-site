@@ -9,7 +9,7 @@ npm run dev
 
 Open the local URL printed by Vite. `npm run build` creates a deployable static site in `dist/`.
 
-The hero has three accessible tabs: Workspace, Prism AI, and Contract Intelligence. They cycle every four seconds; manual selection resets the timer. Click a tab or use Left/Right, Home, and End while the tab list is focused. The workspace is selected initially. The “Open source. Run your way.” section follows the hero preview and presents self-hosting and managed deployment with responsive cards and links to GitHub and the team. The lifecycle section follows, with accessible detail tooltips added to each step.
+The hero has three accessible tabs: Workspace, Prism AI, and Contract Intelligence. They cycle every four seconds; manual selection resets the timer. Click a tab or use Left/Right, Home, and End while the tab list is focused. The workspace is selected initially. The “Your Infrastructure. Your Rules.” section follows the hero preview and presents self-hosting and managed deployment with responsive cards and links to GitHub and the team. The lifecycle section follows, with accessible detail tooltips added to each step.
 
 The product screens are marketing preview images exported directly from Figma, not a working legal application. Page headings, navigation, buttons, tabs, and the lifecycle are HTML. GitHub links open the Prism repository; contact links open FuturixAI’s contact page. This page does not call an AI service or submit user data.
 
