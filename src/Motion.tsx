@@ -83,7 +83,7 @@ export function HeadingReveal({ as: Tag = 'h2', id, children }: {
     <Tag id={id} className="heading-reveal">
       <span ref={box} className="heading-box">
         <span ref={source} className="heading-source" style={{ opacity: animating ? 0 : 1 }}>{children}</span>
-        {animating && <span className="heading-overlay" aria-hidden="true">
+        {animating && <span className="heading-overlay" aria-hidden="true" inert>
           {lines.map((line, index) => (
             <span className="heading-mask" key={index} style={{ top: line.top, height: line.height }}>
               <motion.span

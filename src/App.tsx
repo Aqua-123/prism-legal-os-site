@@ -525,7 +525,7 @@ export default function App() {
       <Header />
       <main id="main" tabIndex={-1}>
         <section className="hero" aria-labelledby="hero-title">
-          <HeadingReveal as="h1" id="hero-title">The <span className="hero-open-source"><span className="hero-github-icon" aria-hidden="true" />Open Source</span> Command Centre<br className="desktop-break" /> For Legal Teams</HeadingReveal>
+          <HeadingReveal as="h1" id="hero-title">The <span className="hero-open-source"><a className="hero-github-link" href={GITHUB} target="_blank" rel="noreferrer" aria-label="View Prism on GitHub"><span className="hero-github-icon" aria-hidden="true" /></a>Open Source</span> Command Centre<br className="desktop-break" /> For Legal Teams</HeadingReveal>
           <LineReveal className="hero-description">One Legal OS To Draft, Review,<br className="desktop-break" /> And Take Command Of Every Contract</LineReveal>
           <div className="hero-actions">
             <a className="button button-light" href={GITHUB} target="_blank" rel="noreferrer"><Icon name="hero-imgImage54Vectorized" className="github-icon" />View Github<ExternalArrow /></a>
