@@ -62,10 +62,16 @@ test('keyboard navigation wraps and respects Home and End', async ({ page }) => 
 
 test('calls to action point to the project and its team', async ({ page }) => {
   await page.goto('/');
-  await expect(page.getByRole('link', { name: 'GitHub', exact: true })).toHaveAttribute('href', 'https://github.com/FuturixAI-and-Quantum-Works/Prism-Legal-OS');
+  const github = 'https://github.com/FuturixAI-and-Quantum-Works/Prism-Legal-OS';
+  await expect(page.getByRole('link', { name: 'GitHub', exact: true })).toHaveAttribute('href', github);
+  await expect(page.getByRole('link', { name: 'View Prism on GitHub', exact: true })).toHaveAttribute('href', github);
   await expect(page.getByRole('link', { name: 'Talk to Us', exact: true })).toHaveAttribute('href', 'https://www.futurixai.com/contact');
-  await expect(page.getByRole('link', { name: 'Explore on GitHub', exact: true })).toHaveAttribute('href', 'https://github.com/FuturixAI-and-Quantum-Works/Prism-Legal-OS');
+  await expect(page.getByRole('link', { name: 'Explore on GitHub', exact: true })).toHaveAttribute('href', github);
   await expect(page.getByRole('link', { name: 'Talk to Our Team', exact: true })).toHaveAttribute('href', 'https://www.futurixai.com/contact');
+  const githubLinks = page.locator('a[href*="github.com"]');
+  await expect(githubLinks).toHaveCount(13);
+  const hrefs = await githubLinks.evaluateAll((nodes) => nodes.map((node) => (node as HTMLAnchorElement).getAttribute('href')));
+  expect(hrefs.every((href) => href === github)).toBe(true);
 });
 
 test('mobile layout fits the viewport and all three tabs work', async ({ page }) => {
