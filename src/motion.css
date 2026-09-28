@@ -15,7 +15,8 @@
 .feature-preview-scene { min-width: 0; align-self: start; margin-top: clamp(0px, 2.8125vw, 54px); }
 .feature-preview-scene .feature-preview { margin-top: 0; }
 .external-arrow { position: relative; display: inline-block; overflow: hidden; width: 17px; height: 17px; flex: 0 0 17px; }
-.external-arrow span { display: block; line-height: 17px; transition: transform 300ms ease-in-out; }
+.external-arrow span { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; transition: transform 300ms ease-in-out; }
+.external-arrow svg { display: block; }
 .external-arrow span + span { position: absolute; inset: 0; transform: translate(-160%, 160%); }
 a:is(:hover, :focus-visible) .external-arrow span:first-child { transform: translate(160%, -160%); }
 a:is(:hover, :focus-visible) .external-arrow span + span { transform: translate(0, 0); }
