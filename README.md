@@ -50,11 +50,3 @@ Source: https://www.figma.com/design/7jhTQEd4gOESpbosguON7d/ZeroCRM?node-id=519-
 The shared `TrailBackground` also replaces line patterns behind all three hero previews, both deployment choices, the five feature previews, and the Why Prism illustration. Foreground exports preserve the product UI and floating cards; regenerate them from the original assets with `python3 scripts/build-trail-foregrounds.py`. Each field initializes on viewport entry, pauses offscreen, and uses the same white pointer trail and reduced-motion fallback. Deployment fields fade behind text for readability. The deployment choices now follow the hero preview, before the lifecycle section.
 
 Copy outside the hero was adapted from the supplied Google Doc: https://docs.google.com/document/d/1vt2HZrS6ig1Jukey9bJAl3C78lm1QD1tR2sXW1RFuzA/edit. Product introduction, compliance, risk assessment, industries, Why Prism, trust, closing, and footer copy follow that source. Its screenshots describe an earlier layout; current working navigation and deployment choices are retained. Original Figma panel colors are applied beneath a transparent trail and static fallback, including the feature preview colors on desktop and mobile.
-
-## Deployment
-
-Product repository: https://github.com/FuturixAI-and-Quantum-Works/Prism-Legal-OS
-
-Live site: https://aqua-123.github.io/prism-legal-os-site/
-
-GitHub Pages serves the production build from the `gh-pages` branch. Build with `npm run build -- --base=/prism-legal-os-site/` and publish the contents of `dist/` to that branch. Application and CSS assets respect Vite's base path. No environment variables are required.
