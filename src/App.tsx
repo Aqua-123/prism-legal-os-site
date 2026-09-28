@@ -1,4 +1,6 @@
 import { assetUrl } from './assets';
+import { HugeiconsIcon } from '@hugeicons/react';
+import { ArrowUpRight01Icon } from '@hugeicons/core-free-icons';
 import { useEffect, useRef, useState } from 'react';
 import type { KeyboardEvent } from 'react';
 import gsap from 'gsap';
@@ -20,7 +22,8 @@ function Icon({ name, className = '' }: { name: string; className?: string }) {
 }
 
 function ExternalArrow() {
-  return <span className="external-arrow" aria-hidden="true"><span>↗</span><span>↗</span></span>;
+  const arrow = <HugeiconsIcon icon={ArrowUpRight01Icon} size={16} strokeWidth={1.75} />;
+  return <span className="external-arrow" aria-hidden="true"><span>{arrow}</span><span>{arrow}</span></span>;
 }
 
 function Header() {

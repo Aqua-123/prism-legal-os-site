@@ -51,7 +51,7 @@ button:focus-visible, a:focus-visible, [tabindex]:focus-visible {
 .button-dark:hover { background: linear-gradient(0deg, #454545, #303030); }
 .github-link { font-size: 14px; gap: 7px; }
 .github-link .icon { width: 16px; height: 16px; }
-.external-arrow { font-size: 17px; line-height: 14px; font-weight: 400; }
+.external-arrow { color: currentColor; }
 
 main { margin: 0 auto; }
 main > * { max-width: var(--page-width); margin-inline: auto; }

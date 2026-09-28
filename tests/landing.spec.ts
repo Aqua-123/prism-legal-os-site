@@ -68,6 +68,12 @@ test('calls to action point to the project and its team', async ({ page }) => {
   await expect(page.getByRole('link', { name: 'Talk to Us', exact: true })).toHaveAttribute('href', 'https://www.futurixai.com/contact');
   await expect(page.getByRole('link', { name: 'Explore on GitHub', exact: true })).toHaveAttribute('href', github);
   await expect(page.getByRole('link', { name: 'Talk to Our Team', exact: true })).toHaveAttribute('href', 'https://www.futurixai.com/contact');
+  const arrows = page.locator('.external-arrow');
+  await expect(arrows).toHaveCount(7);
+  for (const arrow of await arrows.all()) {
+    await expect(arrow).not.toContainText('↗');
+    await expect(arrow.locator('svg')).toHaveCount(2);
+  }
   const githubLinks = page.locator('a[href*="github.com"]');
   await expect(githubLinks).toHaveCount(13);
   const hrefs = await githubLinks.evaluateAll((nodes) => nodes.map((node) => (node as HTMLAnchorElement).getAttribute('href')));
