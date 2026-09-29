@@ -486,9 +486,9 @@ function Community() {
   return (
     <section className="community" aria-labelledby="community-title">
       <div className="community-header">
-        <HeadingReveal id="community-title">Prism Legal OS Is Futurix’s contribution to open source.</HeadingReveal>
+        <HeadingReveal id="community-title">Prism Legal OS Is FuturixAI’s contribution to open source.</HeadingReveal>
         <div className="community-copy">
-          <LineReveal className="community-intro">We believe the best technology is built together. Prism is Futurix’s contribution to open source, a project designed to be shared, extended, and shaped by the community.<br />Build with us. Build in the open.</LineReveal>
+          <LineReveal className="community-intro">We believe the best technology is built together. Prism is FuturixAI’s contribution to open source, a project designed to be shared, extended, and shaped by the community.<br />Build with us. Build in the open.</LineReveal>
           <a className="button button-light" href={GITHUB} target="_blank" rel="noreferrer"><Icon name="hero-imgImage54Vectorized" className="github-icon" />View Github<ExternalArrow /></a>
         </div>
       </div>
@@ -528,7 +528,7 @@ export default function App() {
       <Header />
       <main id="main" tabIndex={-1}>
         <section className="hero" aria-labelledby="hero-title">
-          <HeadingReveal as="h1" id="hero-title">The <span className="hero-open-source"><a className="hero-github-link" href={GITHUB} target="_blank" rel="noreferrer" aria-label="View Prism on GitHub"><span className="hero-github-icon" aria-hidden="true" /></a>Open Source</span> Command Centre<br className="desktop-break" /> For Legal Teams</HeadingReveal>
+          <HeadingReveal as="h1" id="hero-title">The <span className="hero-open-source"><a className="hero-github-link" href={GITHUB} target="_blank" rel="noreferrer" aria-label="View Prism on GitHub"><span className="hero-github-icon" aria-hidden="true" /></a>Open Source</span><br className="desktop-break" /> Legal Operating System</HeadingReveal>
           <LineReveal className="hero-description">One Legal OS To Draft, Review,<br className="desktop-break" /> And Take Command Of Every Contract</LineReveal>
           <div className="hero-actions">
             <a className="button button-light" href={GITHUB} target="_blank" rel="noreferrer"><Icon name="hero-imgImage54Vectorized" className="github-icon" />View Github<ExternalArrow /></a>
